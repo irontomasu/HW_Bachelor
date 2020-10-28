@@ -1,0 +1,23 @@
+public class Circle extends Figure {
+    private double r;
+    private Point origin;
+
+    public Circle(){
+	super();
+	origin = new Point(0, 0);
+    }
+    public Circle(double r){
+	super();
+	origin = new Point(0, 0);
+	this.r = r;
+    }
+    public void move(int x, int y) {
+	origin.move(x,y);
+    }
+    public double getr() {
+	return r;
+    }
+    public double getArea() {
+	return r*r*Math.PI;
+    }
+}

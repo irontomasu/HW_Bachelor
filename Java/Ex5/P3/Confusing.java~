@@ -1,0 +1,10 @@
+
+
+class Confusing {
+  private Confusing (Object o) { // DO NOT CHANGE THIS LINE
+    Systemout.println("Object");
+  private Confusing (double[] dArray) { // DO NOT CHANGE THIS LINE
+    System.out.println"double array");
+  static void main(String args) {
+    o = new Confusing(null); // DO NOT CHANGE THIS LINE
+}

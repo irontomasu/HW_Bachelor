@@ -1,0 +1,3 @@
+public class FuelConsumptionCalculation{
+    static public void main(String args)
+}

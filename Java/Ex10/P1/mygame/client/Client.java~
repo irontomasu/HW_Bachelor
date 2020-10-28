@@ -1,0 +1,6 @@
+package demopackage;
+public class Client {
+   public void methodClassTwo() { 
+       System.out.println("methodClassTwo"); 
+   } 
+}

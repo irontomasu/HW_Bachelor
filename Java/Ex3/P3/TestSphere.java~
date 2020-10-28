@@ -1,0 +1,9 @@
+public class Sphere {
+    float radius;
+    public Sphere(float setradius){
+	radius = setradius;
+    }
+
+    public float volume(float r){
+	return 4*(math.PI)*r*r*r/3;
+    }

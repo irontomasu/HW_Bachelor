@@ -1,0 +1,78 @@
+class Person {
+  private String name;
+ public Person(String name) {
+   this.name = name;
+ }
+ public String introduction() {
+    return "My name is " + name + ".";
+  }
+}
+
+class Student extends Person {
+  private String id;
+  public Student(String name, String id){
+    super(name);
+    this.id = id;
+  }
+  public String introduction() {
+    return "I am a student. " + super.introduction() + " My ID is "+ id + ".";
+  }
+}
+
+class EnglishPerson extends Person {
+  public EnglishPerson(String name) {
+    super(name);
+  }
+ public String introduction() {
+     return "How do you do? " + super.introduction();
+  }
+}
+
+class EnglishStudent extends Student {
+  public EnglishStudent(String name, String id){
+      super(name, id);
+  }
+  public String introduction() {
+    return "How do you do? " + super.introduction();
+  }
+}
+class JapanesePerson extends Person {
+  public JapanesePerson(String name) {
+    super(name);
+  }
+ public String introduction() {
+     return "Hajime mashite. " + super.introduction();
+  }
+}
+
+class JapaneseStudent extends Student {
+  public JapaneseStudent(String name, String id){
+      super(name, id);
+  }
+  public String introduction() {
+    return "Hajime mashite? " + super.introduction();
+  }
+}
+
+public class PeopleIntroduction {
+  public static void main(String[] args) {
+       Student s = 
+          new Student("Saito","s115333"); 
+       Person p = 
+        new Person("Sato");
+       EnglishStudent es = 
+          new EnglishStudent("Ken","s115336"); 
+       EnglishPerson ep = 
+        new EnglishPerson("Kento"); 
+       JapaneseStudent js = 
+          new JapaneseStudent("Watabe","s115341"); 
+       JapanesePerson jp = 
+        new JapanesePerson("Watanabe"); 
+        System.out.println(s.introduction());
+        System.out.println(p.introduction());
+        System.out.println(es.introduction());
+        System.out.println(ep.introduction());
+        System.out.println(js.introduction());
+        System.out.println(jp.introduction());
+   }
+}
